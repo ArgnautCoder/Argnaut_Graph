@@ -1,7 +1,4 @@
-#include<iostream>
-#include<algorithm>
-#include<vector>
-#include<queue>
+#include<bits/stdc++.h>
 using namespace std;
 
 bool checkbfs(int start,int end,vector<int> a[],vector<int> &vis){
