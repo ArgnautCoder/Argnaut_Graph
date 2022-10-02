@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<algorithm>
 using namespace std;
 
 bool checkbfs(int start,int end,vector<int> a[],vector<int> &vis){
