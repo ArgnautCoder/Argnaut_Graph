@@ -39,13 +39,12 @@ bool bfs(vector<int> a[],int n){
 }
 
 int main(){
+// 	no of nodes and edges
 	int n,e;
 	cin>>n>>e;
 	vector<int> vt[n];
-	for (int i = 0; i < e; i++)
-	{
-		int con1,con2;
-		cin>>con1>>con2;
+	for (int i = 0; i < e; i++){
+		int con1,con2; cin>>con1>>con2;
 		vt[con1].push_back(con2);
 		vt[con2].push_back(con1);
 
