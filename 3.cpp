@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-bool checkbfs(int start,int end,vector<int> a[],vector<int> &vis){
+bool Checkbfs(int start,int end,vector<int> a[],vector<int> &vis){
 	queue<pair<int,int>> qt;
 	vis[start]=1;
 	qt.push({start,-1});
@@ -31,7 +31,7 @@ bool bfs(vector<int> a[],int n){
 	for (int i = 1; i <= n; i++)
 	{
 		if(vis[i]==0){
-			if(checkbfs(i,n,a,vis)){
+			if(Checkbfs(i,n,a,vis)){
 				return true;
 			}
 		}
